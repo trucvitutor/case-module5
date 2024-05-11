@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Mới Thông Tin Dịch Vụ</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS tùy chỉnh -->
+    <style>
+        body {
+            background-image: url('background_image.jpg'); /* Đường dẫn đến ảnh nền */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff; /* Màu chữ trắng */
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Màu nền với độ trong suốt */
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 class="text-center">Thêm Mới Thông Tin Dịch Vụ</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="ten-dich-vu">Tên Dịch Vụ:</label>
+            <input type="text" id="ten-dich-vu" name="ten-dich-vu" class="form-control" required>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="dien-tich">Diện Tích Sử Dụng (m²):</label>
+                <input type="number" id="dien-tich" name="dien-tich" class="form-control" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="chi-phi">Chi Phí Thuê (VNĐ):</label>
+                <input type="number" id="chi-phi" name="chi-phi" class="form-control" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="so-luong">Số Lượng Người Tối Đa:</label>
+                <input type="number" id="so-luong" name="so-luong" class="form-control" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="kieu-thue">Kiểu Thuê:</label>
+                <select id="kieu-thue" name="kieu-thue" class="form-control" required>
+                    <option value="nam">Theo Năm</option>
+                    <option value="thang">Theo Tháng</option>
+                    <option value="ngay">Theo Ngày</option>
+                    <option value="gio">Theo Giờ</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="dich-vu-mien-phi">Dịch Vụ Miễn Phí Đi Kèm:</label>
+            <textarea id="dich-vu-mien-phi" name="dich-vu-mien-phi" class="form-control" required></textarea>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Thêm Mới</button>
+        </div>
+    </form>
+</div>
+<!-- Bootstrap JS và các phụ thuộc khác -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

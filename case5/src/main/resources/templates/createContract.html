@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Hợp Đồng Thuê</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-control {
+            border-radius: 20px;
+        }
+        .btn-primary {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Tạo Hợp Đồng Thuê</h2>
+    <form>
+        <div class="form-group">
+            <label for="so-hop-dong">Số Hợp Đồng:</label>
+            <input type="text" class="form-control" id="so-hop-dong" placeholder="Nhập số hợp đồng">
+        </div>
+        <div class="form-group">
+            <label for="ngay-bat-dau">Ngày Bắt Đầu:</label>
+            <input type="date" class="form-control" id="ngay-bat-dau">
+        </div>
+        <div class="form-group">
+            <label for="ngay-ket-thuc">Ngày Kết Thúc:</label>
+            <input type="date" class="form-control" id="ngay-ket-thuc">
+        </div>
+        <div class="form-group">
+            <label for="so-tien-coc">Số Tiền Cọc Trước:</label>
+            <input type="number" class="form-control" id="so-tien-coc" placeholder="Nhập số tiền cọc trước">
+        </div>
+        <div class="form-group">
+            <label for="tong-so-tien-thanh-toan">Tổng Số Tiền Thanh Toán:</label>
+            <input type="number" class="form-control" id="tong-so-tien-thanh-toan" placeholder="Nhập tổng số tiền thanh toán">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Tạo Hợp Đồng</button>
+    </form>
+</div>
+<!-- Bootstrap JS và các phụ thuộc khác -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
